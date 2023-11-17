@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+
+body {
+    font-family: 'Poppins', 'Quicksand';
+    background: rgb(0, 0, 0);
+   
+}
+
+
+.navbar-navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 6%;
+    height: 100px;
+    background-color: rgb(1, 1, 1, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+.navbar-navbar-custom .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-navbar-custom .navbar-nav-nav a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
+    transition: 0.3s;
+}
+
+
+.navbar-navbar-custom .navbar-nav-nav a:hover {
+    color: green;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/console.bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   background-attachment: fixed;
+}
+
+.hero .content-home {
+    padding: 1.4rem 5%;
+    max-width: 60rem;
+}
+
+.hero .content-home h1 {
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    right: 270px;
+    font-weight: 700;
+ 
+}
+
+.hero .content-home p {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content-home h1 span {
+    color: green;
+}
+
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(1,1,3) 3%, rgba(255,255,255,0) 25%);
+}
+
+
+.game {
+    padding: 10rem 7% 1.4rem;
+    color: #fff;
+   
+    
+}
+
+.game h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    background-attachment: fixed;
+    font-weight: 700;
+}
+
+.game h2 span{
+    color: green;
+}
+
+
+.card {
+    box-shadow: rgba(1, 1, 3, 0.5);
+    
+}
+
+.col {
+    padding: 1.4rem 7%;
+}
+
+.card {
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.about hr {
+    border-top: 3px solid #fff;
+    
+}
+
+.pKiri, .pKanan{
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
